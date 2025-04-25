@@ -1,0 +1,62 @@
+{
+  "name": "ai-chat-react",
+  "version": "1.0.0",
+  "description": "ai Chat Widget is a lightweight, customizable React component that adds an AI-powered chat bubble to your website. It seamlessly integrates with OpenRouter to enable real-time conversations powered by leading LLMs like GPT-4 and Claude.",
+  "keywords": [
+    "react",
+    "chat",
+    "chatbot",
+    "ai",
+    "gpt",
+    "openrouter",
+    "llm",
+    "react-component",
+    "chat-widget",
+    "gpt-chat",
+    "ai-assistant",
+    "openai",
+    "react-chatbot",
+    "typescript",
+    "react-hook",
+    "frontend",
+    "llm-integration",
+    "ai-ui"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/NimrodScH/ai-chat",
+  "bugs": {
+    "url": "https://github.com/NimrodScH/ai-chat/issues"
+  },
+  "author": "NimrodSch",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NimrodScH/ai-chat.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.17.4",
+    "prettier": "^3.5.3",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.2"
+  },
+  "scripts": {
+    "build": "tsup",
+    "ci": "npm run build && npm run check-format && npm run check-exports && npm run lint",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
+    "lint": "tsc"
+  },
+  "main": "dist/index.js",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/index.js",
+      "default": "./dist/index.cjs"
+    }
+  }
+}

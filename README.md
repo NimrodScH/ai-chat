@@ -1,0 +1,1 @@
+ai Chat Widget is a lightweight, customizable React component that adds an AI-powered chat bubble to your website. It seamlessly integrates with OpenRouter to enable real-time conversations powered by leading LLMs like GPT-4 and Claude.
