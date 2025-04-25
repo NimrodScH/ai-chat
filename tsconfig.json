@@ -17,8 +17,7 @@
     "noImplicitOverride": true,
 
     /* If transpiling with TypeScript: */
-    "module": "Preserve",
-
+    "module": "Preserve"
   },
   "include": ["src"],
   "exclude": ["tsup.config.ts", "dist", "node_modules"]
