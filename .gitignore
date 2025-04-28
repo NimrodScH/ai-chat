@@ -1,2 +1,34 @@
-node_modules
-dist
+# Node modules
+node_modules/
+
+# Build output
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Vite
+.vite/
+
+# Output from tsup or tsc
+*.tsbuildinfo
+
+# Changesets metadata (optional)
+.changeset/
+
+# IDEs
+.vscode/
+.idea/
+
+# Mac/Linux system files
+.DS_Store
+Thumbs.db
+
+# Local testing / yalc
+.yalc/
+yalc.lock
+
+demo/

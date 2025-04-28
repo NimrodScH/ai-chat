@@ -1,6 +1,7 @@
 {
   "name": "ai-crw",
-  "version": "1.0.1",
+  "version": "1.0.3",
+  "style": "dist/index.css",
   "description": "ai Chat Widget is a lightweight, customizable React component that adds an AI-powered chat bubble to your website. It seamlessly integrates with OpenRouter to enable real-time conversations powered by leading LLMs like GPT-4 and Claude.",
   "keywords": [
     "react",
@@ -39,12 +40,22 @@
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.17.4",
     "@changesets/cli": "^2.29.2",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.4.1",
     "prettier": "^3.5.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "tsup": "^8.4.0",
     "typescript": "^5.8.3",
+    "vite": "^6.3.3",
     "vitest": "^3.1.2"
   },
   "scripts": {
+    "dev": "vite demo",
+    "preview": "vite preview demo",
     "build": "tsup",
     "ci": "npm run build && npm run check-format && npm run check-exports && npm run lint",
     "format": "prettier --write .",
@@ -61,5 +72,16 @@
       "import": "./dist/index.js",
       "default": "./dist/index.cjs"
     }
+  },
+  "peerDependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "framer-motion": "^12.9.2",
+    "openai": "^4.96.0"
   }
 }

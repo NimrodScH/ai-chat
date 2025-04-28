@@ -1,9 +1,14 @@
 import { defineConfig } from 'tsup';
 
 export default defineConfig({
-  entryPoints: ['src/index.ts'],
+  entry: ['src/index.tsx'],
   format: ['cjs', 'esm'],
-  dts: true,
-  outDir: 'dist',
+  splitting: true,
+  sourcemap: true,
   clean: true,
+  dts: {
+    resolve: true, // this is important!
+  },
+  external: ['*.css'], // <- ADD THIS!!
+  target: 'es2022',
 });
